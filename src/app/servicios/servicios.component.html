@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div align="center">
+  <h1>{{prestador?.nombre}} {{prestador?.apellido}}</h1>
+</div>
+<section>
+  <div *ngFor="let servicioOfrecido of prestador?.serviciosOfrecidos">
+    <div class="contenedor_trabajos">
+      <h1>Servicio de {{servicioOfrecido.servicio.nombre}}</h1>
+    </div>
+    <div class="luis_trabajando">
+        <img src="assets/img/trabajo.jpg" alt="Luis_trabajando">
+    </div>
+
+    <div class="luis_presentacion">
+        <p>{{servicioOfrecido.experiencia}}</p>
+
+    </div>
+
+    <div class="vinietas">
+        <ul>
+          <li *ngFor="let tarea of servicioOfrecido.servicio.tareas">
+            {{tarea.descripcion}}
+          </li>
+        </ul>
+    </div>
+    <div align="center">
+      <button class="btn btn-secondary">Modificar</button><br><br>
+    </div>
+  </div>
+
+</section>

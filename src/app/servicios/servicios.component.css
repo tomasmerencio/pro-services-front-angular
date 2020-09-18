@@ -1,0 +1,30 @@
+section{
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+  }
+  
+  .contenedor_trabajos {
+      background-color: rgba(218, 218, 218, 0.404);
+      text-align: center;
+  }
+  
+  .luis_trabajando {
+      text-align: center;
+      border-bottom: 3px solid #e84d14;
+      padding-bottom: 7px;
+  }
+  
+  .luis_trabajando img {
+      border: solid rgba(218, 218, 218, 0.404) 4px;
+  }
+  
+  .vinietas ul li {
+      list-style-type: circle;
+  }
+  
+  .consultas li {
+      list-style: none;
+  }
+  

@@ -1,0 +1,45 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="assets/img/services.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <div *ngIf="yaEsMiembro">
+        <!-- Login Form -->
+        <form [formGroup]="formulario" (ngSubmit)="login()">
+          <input type="text" id="login" class="fadeIn second" formControlName="username" placeholder="Nombre de usuario" (keyup)="ocultarErrores()">
+          <input type="text" id="password" class="fadeIn third" formControlName="password" placeholder="Contraseña" (keyup)="ocultarErrores()">
+          <input type="submit" class="fadeIn fourth" value="Entrar">
+          <label *ngIf="errorFormularioInvalido" style="color:red">Debe completar los campos</label>
+          <label *ngIf="errorCredenciales" style="color:red">Usuario o contraseña incorrecta</label>
+        </form>
+  
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="javascript:void(0)" (click) = (mostrarFormularioDeRegistro())>¿No tenés cuenta?</a>
+        </div>
+      </div>
+  
+      <div *ngIf="!yaEsMiembro">
+        <!-- Register Form -->
+        <form>
+          <input type="text" id="login" class="fadeIn second" name="name" placeholder="Nombre">
+          <input type="text" id="login" class="fadeIn second" name="lastname" placeholder="Apellido">
+          <input type="text" id="login" class="fadeIn second" name="username" placeholder="Nombre de usuario">
+          <input type="text" id="password" class="fadeIn third" name="password" placeholder="Contraseña">
+          <input type="text" id="password" class="fadeIn third" name="password2" placeholder="Repita la contraseña">
+          <input type="submit" class="fadeIn fourth" value="Registrarse">
+        </form>
+  
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="javascript:void(0)" (click) = (mostrarFormularioDeIngreso())>¿Ya tenés cuenta?</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

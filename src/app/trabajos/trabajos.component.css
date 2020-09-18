@@ -1,0 +1,69 @@
+section{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .botonera_principal {
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px rgba(183, 183, 183, 0.4);
+  }
+  
+  .botonera_principal a img {
+    height: 65px;
+    margin-left: 32px;
+    float: left;
+  }
+  
+  .botonera_principal ul {
+    background-color: white;
+    height: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 65px;
+  }
+  
+  .botonera_principal ul li {
+    list-style-type: none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .botonera_principal ul li a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+  }
+  
+  .botonera_principal ul li a:hover {
+    border-left: solid 2px rgba(183, 183, 183, 0.4);
+    border-right: solid 2px rgba(183, 183, 183, 0.4);
+    padding: 5px;
+  }
+  
+  .contenedor_trabajos {
+    background-color: rgba(218, 218, 218, 0.404);
+  }
+  
+  .contenedor_trabajos h3 {
+    color: red;
+  }
+  
+  .contenedor_trabajos h4 {
+    color: blue;
+  }
+  
+  .contenedor_trabajos2 {
+    margin-top: 0;
+    background-color: rgba(218, 218, 218, 0.404);
+  }
+  
+  .contenedor_trabajos2 h3 {
+    color: rgb(0, 255, 0);
+  }
+  
+  .contenedor_trabajos2 h4 {
+    color: blue;
+  }
+  
